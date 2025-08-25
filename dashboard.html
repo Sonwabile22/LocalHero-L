@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Local Hero Lite — Dashboard | Issue Management</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body class="bg">
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo small">🌍</div>
+      <div>
+        <h3>Local Hero Lite</h3>
+        <p id="userBadge" class="muted"></p>
+      </div>
+    </div>
+    <nav class="topbar-right">
+      <a class="btn ghost" href="dashboard.html">Dashboard</a>
+      <a id="reportLink" class="btn ghost" href="report.html" style="display:none;">Report Issue</a>
+      <button class="btn danger" onclick="logout()">Logout</button>
+      <button class="btn ghost" onclick="resetSampleData()" style="font-size: 12px; padding: 6px 10px;">Reset Data</button>
+      <button class="btn ghost" onclick="clearCorruptedData()" style="font-size: 12px; padding: 6px 10px;">Clear Corrupted</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div id="dashboardContent"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
